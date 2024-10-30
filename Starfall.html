@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starfall S10</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Basic Styling */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header a.logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+    }
+
+    header ul li {
+      margin-left: 20px;
+    }
+
+    header ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    header ul li a:hover {
+      color: #00bcd4;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://momsgotthestuff.com/wp-content/uploads/2021/05/minecraft-castle-ideas-10.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00bcd4;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .hero .btn:hover {
+      background: #0097a7;
+    }
+
+    /* Services Section */
+    #services {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #services h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-container {
+      display: flex;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .service {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .service img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .service h3 {
+      margin-bottom: 1rem;
+    }
+
+    .service p {
+      color: #555;
+    }
+
+    .service .btn {
+      padding: 10px 15px;
+      background: #00bcd4;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .service .btn:hover {
+      background: #0097a7;
+    }
+
+    /* About Section */
+    #about {
+      background: #333;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    #about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    .blue-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      /* Bootstrap primary blue */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .blue-button:hover {
+      background-color: #0056b3;
+      /* Darker shade on hover */
+    }
+
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="#" class="logo">Starfall</a>
+      <ul>
+        <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-info-circle"></i> Rules</a></li>
+        <li><a href="#"><i class="fas fa-star"></i> Staff</a></li>
+        <li><a href="#"><i class="fas fa-check"></i> Vote</a></li>
+        <li><a href="#"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Starfall</h1>
+    <p>Join our friendly community</p>
+    <a href="#services" class="btn">Get Started</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Benefits</h2>
+    <div class="service-container">
+      <div class="service">
+        <img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/2/2e/Totem_of_Undying_JE2_BE2.png"
+          alt="Service One Image">
+        <h3>PvP</h3>
+        <p>Kill others and get their loot and if you die you will lose 500$ in game</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="service">
+        <img src="https://icon-library.com/images/minecraft-chest-icon/minecraft-chest-icon-11.jpg"
+          alt="Service Two Image">
+        <h3>Crates</h3>
+        <p>Join daily crates and get surprising gifts </p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="service">
+        <img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/5/57/Netherite_Ingot_JE1.png"
+          alt="Service Three Image">
+        <h3>become Rich</h3>
+        <p>Sell your stuff like iron,Gold,Diamond,Ancient debris</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Starfall Minecraft Realm is a vibrant community where players can explore endless adventures, build incredible
+      creations, and connect with fellow enthusiasts in a magical blocky world.</p>
+    <p>its a bedrock edition Realm </p>
+    <p>Realm code:hrSAWGaCYmiL5FE </p>
+    <p>Website made with Shon John✪ </p>
+    <a href="https://discord.gg/fSbBv7CZaz" class="blue-button">Join Discord!</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Starfall. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
